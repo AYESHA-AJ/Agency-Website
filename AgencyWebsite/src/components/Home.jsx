@@ -1,6 +1,11 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
 import illustration from "../assets/Illustration.png";
+import Product from "./Product";
+import Services from "./Services";
+import About from "./About";
+import Newsletter from "./Newsletter";
+import Blog from "./Blog";
 
 const Home = () => {
   return (
@@ -12,7 +17,7 @@ const Home = () => {
               <img src={illustration} className="mr-20"></img>
             </div>
             <div className="md:w-1/2 ml-20">
-              <h1 className="text-5xl font-semibold text-neutralDGray md:w-3/4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-neutralDGray md:w-3/4 ">
                 Lessons and insights{" "}
                 <span className="text-brandPrimary leading-snug">
                   from 8 years
@@ -30,7 +35,7 @@ const Home = () => {
               <img src={illustration} className="mr-20"></img>
             </div>
             <div className="md:w-1/2 ml-20">
-              <h1 className="text-5xl font-semibold text-neutralDGray md:w-3/4 leading-snug">
+              <h1 className="text-3xl  md:text-5xl sm:text-4xl font-semibold text-neutralDGray md:w-3/4 leading-snug ">
                 Learn and Earn Money{" "}
                 <span className="text-brandPrimary leading-snug">
                   in 4 Months
@@ -45,7 +50,11 @@ const Home = () => {
           </div>
         </Carousel>
       </div>
-
+      <Services />
+      <About/>
+      <Product />
+      <Blog/>
+      <Newsletter/>
     </div>
   );
 };
