@@ -12,14 +12,17 @@ import Newsletter from './components/Newsletter.jsx';
 import Blog from './components/Blog.jsx';
 
 const router = createBrowserRouter(createRoutesFromElements(
+  <>
   <Route path='/' element={<Layout />}>
     <Route index element={<Home />} />
     <Route path='about' element={<About />} />
     <Route path='service' element={<Services />} />
     <Route path='product' element={<Product />} />
     <Route path='testimonal' element={<Newsletter />} />
-    <Route path='blog' element={<Blog />} />
+    {/* <Route path='blog' element={<Blog />} /> */}
   </Route>
+    <Route path='blog' element={<Blog />} />
+    </>
 ));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
